@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//void main List<String>questions
 void main() {
   /*
    --->runApp is normal func written by flutter team.it is exposed
@@ -30,12 +31,37 @@ class MyApp extends StatelessWidget {
   */
   @override //to perform operations or its a decorator provided by dart
   Widget build(BuildContext context) {
+    //using list we can group related data together
+    var questions = [
+      'What\'s your favorite color?',
+      'What\'s your favorite animal?',
+    ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: Text('My First App'),
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.black,
         ),
-        body: Text('Hello guys!'),
+        body: Column(
+          children: [
+            Text('The question!'),
+            RaisedButton(
+              child: Text('Ans 1'),
+              onPressed: null,
+            ),
+            RaisedButton(
+              child: Text('Ans 2'),
+              onPressed: null,
+            ),
+            RaisedButton(
+              child: Text('Ans 3'),
+              onPressed: null,
+            ),
+            //RaisedButton--replacement for raisedbutton
+            //ElevatedButton()
+          ], //here it tells us that it holds list of widget
+        ),
       ),
       //scaffold is another widget and helps in creating base design
     );
