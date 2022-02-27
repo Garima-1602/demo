@@ -15,6 +15,10 @@ void main() {
 //material.dart has its own base class that alllow its own widgets
 //that class is statelesswidget class
 class MyApp extends StatelessWidget {
+  void answerquestion()
+  {
+    print('Ans chosen')
+  }
   const MyApp({Key? key}) : super(key: key);
 //declare the class in pascal case like MyApp
 /*---->context is a special type of object which will be passed
@@ -40,7 +44,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('My First App'),
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.yellow,
           foregroundColor: Colors.black,
         ),
         body: Column(
@@ -48,15 +52,15 @@ class MyApp extends StatelessWidget {
             Text('The question!'),
             RaisedButton(
               child: Text('Ans 1'),
-              onPressed: null,
+              onPressed: answerquestion ,
             ),
             RaisedButton(
               child: Text('Ans 2'),
-              onPressed: null,
+              onPressed: answerquestion,
             ),
             RaisedButton(
               child: Text('Ans 3'),
-              onPressed: null,
+              onPressed: answerquestion,
             ),
             //RaisedButton--replacement for raisedbutton
             //ElevatedButton()
