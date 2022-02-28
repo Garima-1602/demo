@@ -44,8 +44,8 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('My First App'),
-          backgroundColor: Colors.yellow,
-          foregroundColor: Colors.black,
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.white,
         ),
         body: Column(
           children: [
